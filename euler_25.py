@@ -1,6 +1,7 @@
 #! bin/bash/python
 
 # find the first fibbonacci number that has 1000 decimal digits
+#why won't this work?!
 
 a = 1
 b = 1
