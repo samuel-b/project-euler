@@ -1,15 +1,21 @@
 #! bin/bash/python
 
-#find the largest palindrome number that is the product of two three digit numbers
+#project euler problem 4
+#find the largest palindromic number that is the product of two 3 digit ints. 
 
+sixdig = []
+palindromes = []
 
-a = 100
-b = 100
+for i in range(100,1000):
+    for j in range (100,1000):
+        intstr = str(i*j)
+        reverse = intstr[::-1]
+        if intstr == reverse:
+            palindromes.append(intstr)
 
-while b > 1000:
-	
+for object in palindromes:
+    if len(str(object)) == 6:
+        sixdig.append(object)
 
-def is_palindrome? (x):
-	for i in range(1,len(str(x))):
-		
-
+sixdig.sort()
+print(sixdig)
